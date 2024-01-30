@@ -1,0 +1,46 @@
+POST http://localhost:8080/category HTTP/1.1
+Host: localhost:8080
+Content-type: application/json
+
+{
+    "name": "Category 2",
+    "description": "Category 2 description"
+}
+
+### List Categories
+
+GET http://localhost:8080/category HTTP/1.1
+Host: localhost:8080
+Content-type: application/json
+
+### Get Category By Id
+
+GET http://localhost:8080/category/a45301a4-828b-4060-874f-8a9ea387faca HTTP/1.1
+Host: localhost:8080
+Content-type: application/json
+
+### Create Product
+
+POST http://localhost:8080/product HTTP/1.1
+Host: localhost:8080
+Content-type: application/json
+
+{
+    "name": "Product 1",
+    "description": "Product 1 description",
+    "price": 100,
+    "image_url": "https://github.com/GabrSobral.png",
+    "category_id": "1"
+}
+
+### List Products
+
+GET http://localhost:8080/product HTTP/1.1
+Host: localhost:8080
+Content-type: application/json
+
+### Get Product By Id
+
+GET http://localhost:8080/product/679dfe3c-8878-4c2b-9977-38cf44b534e2 HTTP/1.1
+Host: localhost:8080
+Content-type: application/json
